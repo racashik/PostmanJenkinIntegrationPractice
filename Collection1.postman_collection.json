@@ -13,18 +13,18 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Response time is less than 200ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
-							"});\r",
-							"pm.globals.set(\"variable_key\", \"variable_value\");\r",
-							"pm.collectionVariables.set(\"variable_key\", \"variable_value\");\r",
-							"pm.globals.get(\"variable_key\");\r",
-							"pm.test(\"Body is correct\", function () {\r",
-							"    pm.response.to.have.body(\"response_body_string\");\r",
-							"});"
+							"\r",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
 					}
 				}
 			],
